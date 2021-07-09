@@ -10,32 +10,39 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-| Day   | Deliverable                                  | Status     |
-| ----- | -------------------------------------------- | ---------- |
-| Day 1 | Project Description                          | Incomplete |
-| Day 1 | Wireframes / Priority Matrix / Timeline      | Incomplete |
-| Day 3 | Core Application Structure (HTML, CSS, etc.) | Incomplete |
-| Day 4 | MVP & Bug Fixes                              | Incomplete |
-| Day 5 | Final Touches                                | Incomplete |
-| Day 6 | Present                                      | Incomplete |
+| Day    | Deliverable                                   | Status     |
+| ------ | --------------------------------------------- | ---------- |
+| Fri.   | Project Description                           | Incomplete |
+| Fri.   | Wireframes                                    | Incomplete |
+| Fri.   | Priority Matrix / Timeline                    | Incomplete |
+| Mon.   | Core Application Structure (HTML)             | Incomplete |
+| Mon.   | Core Application Structure (CSS)              | Incomplete |
+| Tues.  | Core Application Structure (JS, JSON, jQuery) | Incomplete |
+| Weds.  | MVP & Bug Fixes                               | Incomplete |
+| Weds.  | Post-MVP Additions                            | Incomplete |
+| Weds.  | Final Touches                                 | Incomplete |
+| Thurs. | Present                                       | Incomplete |
 
 ## Project Description
 
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
+For my portfolio project I am going to initially have one main HTML page with plans to eventually separate it into two (a home page and a projects/portfolio page). The navigation bar will display an icon in the upper lefthand corner and a hamburger menu in the upper righthand corner; the background will be moderately transparent with the icons being opaque. There will be four main section components on the page: Design with Name and Titles (plus post-mvp animation), About Me text, Recent Projects, and Skills icons. The footer will have icons/links to social media, email address, and copyright information with a design similar to the header.
+
 ## Google Sheet
 
-Include link to your google sheet here. Here is the sample [Joe had used in class](https://docs.google.com/spreadsheets/d/15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk/edit#gid=0)
+Include link to your google sheet here. (https://docs.google.com/spreadsheets/d/1Sa4eDWoodZ_YVSU46EfqOmCig-Gkx6diX4EkO3bCM4g/edit?usp=sharing)
 
 ## Portfolio I want to Emulate
 
 Search and compare at least 3 profile web sites. Record your findings in the table below and include some aspect of the site that you would like to incorporate into your own site.
 
-| Link To Site                                         | One Thing I'd Like To Incorporate          |
-| ---------------------------------------------------- | ------------------------------------------ |
-| [denisechandler.com](http://www.denisechandler.com/) | landing page animation                     |
-| [jkeohan.com](http://jkeohan.com/)                   | mouseover on a project triggers animations |
-| [mattfarley.ca](http://mattfarley.ca/)               | layout of the projects                     |
+| Link To Site                                                                    | One Thing I'd Like To Incorporate                                   |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [https://zanegriffin.github.io/\](https://zanegriffin.github.io/portfolioSite/) | Explore button                                                      |
+| [https://mattfarley.ca/](https://mattfarley.ca/)                                | Say hello/contact page                                              |
+| [https://www.dcfonts.com/](https://www.dcfonts.com/)                            | project layout, menu bar animation, slides                          |
+| [https://www.lianapenn.com/](https://www.lianapenn.com/)                        | Main page animation behind name, skills icons, project cards design |
 
 ---
 
@@ -43,13 +50,13 @@ Search and compare at least 3 profile web sites. Record your findings in the tab
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.
 
-- [Mobile](https://i.imgur.com/P3iBEZf.jpg)
-- [Desktop](https://i.imgur.com/xpOWo0E.jpg)
+- [Mobile](https://res.cloudinary.com/dhcagrzcb/image/upload/v1625864826/IMG_1427_lox2dg.heic)
+- [Desktop](https://res.cloudinary.com/dhcagrzcb/image/upload/v1625864832/IMG_1428_fo2frj.heic)
 
-Wireframing Resources:
+<!-- Wireframing Resources:
 
 - [Mockflow](https://mockflow.com/app/#Wireframe)
-- [Figma](https://www.figma.com/)
+- [Figma](https://www.figma.com/) -->
 
 ## Time/Priority Matrix
 
@@ -86,33 +93,47 @@ Time frames are also key in the development cycle. You have limited time to code
 
 #### MVP
 
-| Component               | Priority | Estimated Time | Actual Time |
-| ----------------------- | :------: | :------------: | :---------: | --- |
-| Hamburger               |    H     |      1hr       |     hr      |
-| Project Previews        |    H     |      3hr       |     hr      |
-| Regular Nav             |    H     |      1hr       |     hr      |
-| Adding Form             |    H     |     1.5hr      |     hr      |
-| Other sections and flex |    M     |      3hr       |     hr      |
-| Working with API        |    H     |      3hrs      |     hr      |
-| Responsive              |    H     |      3hr       |     hr      | hr  |
-| Social Media Icons      |    L     |      1hr       |     hr      |
-| Total                   |    H     |    15.5hrs     |     hrs     |
+| Component                 | Priority | Estimated Time | Actual Time |
+| ------------------------- | :------: | :------------: | :---------: |
+| Hamburger Menu            |    H     |      1hr       |     hr      |
+| Regular Nav               |    H     |      1hr       |     hr      |
+| CSS Default Styling (All) |    M     |      2hr       |     hr      |
+| JS Forms/Event Listeners  |    H     |      2hr       |     hr      |
+| JS Functions & jQuery     |    H     |      3hr       |     hr      |
+| JSON Project Cards        |    H     |      3hr       |     hr      |
+| CSS Flexbox/Grid Styling  |    H     |      3hr       |     hr      |
+| Working with API          |    H     |      3hr       |     hr      |
+| Responsive Design         |    H     |      3hr       |     hr      |
+| Contact/Email Event       |    M     |      1hr       |     hr      |
+| Resolving Errors          |    H     |      3hr       |     hr      |
+| Total                     |    H     |     25hrs      |     hrs     |
 
 #### PostMVP
 
-| Component             | Priority | Estimated Time | Actual Time |
-| --------------------- | :------: | :------------: | :---------: | --- |
-| Project Hover         |    L     |      3hr       |     -hr     | hr  |
-| Banner letters wiggle |    L     |      1hr       |     hr      |
-| Interactive Banner    |    M     |      4hr       |     hr      |
-| Materialize           |    H     |      4hr       |     -hr     | hr  |
-| Bootstrap             |    H     |      4hr       |     hr      |
-| Make own icon         |    L     |      4hr       |     hr      |
-| Total                 |    H     |     20hrs      |     hrs     |
+| Component            | Priority | Estimated Time | Actual Time |
+| -------------------- | :------: | :------------: | :---------: |
+| Project Hover        |    L     |      2hr       |     -hr     |
+| Menu Bar Expand      |    L     |      2hr       |     hr      |
+| Social Media Icons   |    L     |      1hr       |     hr      |
+| Make own icon        |    L     |      2hr       |     hr      |
+| Front Page Animation |    H     |      3hr       |     hr      |
+| 2nd HTML Page        |    M     |      3hr       |     hr      |
+| Total                |    H     |     13hrs      |     hrs     |
 
 ## Additional Libraries
 
 Use this section to list all supporting libraries and thier role in the project.
+
+<!-- <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="responsivesheet" href="css/responsive.css" />
+    <script src="js/webcomponents.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="json/projects.json"></script> -->
 
 ## Code Snippet
 
