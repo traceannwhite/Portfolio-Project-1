@@ -1,1 +1,22 @@
 /* Import fonts here */
+* {
+  border: 1px solid red;
+}
+header {
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section.design {
+  background-color: blue;
+  width: cover;
+  height: 15em;
+  margin: 5em 0;
+}
