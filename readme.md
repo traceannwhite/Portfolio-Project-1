@@ -12,9 +12,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 | Day    | Deliverable                                   | Status     |
 | ------ | --------------------------------------------- | ---------- |
-| Fri.   | Project Description                           | Incomplete |
-| Fri.   | Wireframes                                    | Incomplete |
-| Fri.   | Priority Matrix / Timeline                    | Incomplete |
+| Fri.   | Project Description                           | Complete   |
+| Fri.   | Wireframes                                    | Complete   |
+| Fri.   | Priority Matrix / Timeline                    | Complete   |
 | Mon.   | Core Application Structure (HTML)             | Incomplete |
 | Mon.   | Core Application Structure (CSS)              | Incomplete |
 | Tues.  | Core Application Structure (JS, JSON, jQuery) | Incomplete |
@@ -103,7 +103,7 @@ Time frames are also key in the development cycle. You have limited time to code
 | JSON Project Cards        |    H     |      3hr       |     hr      |
 | CSS Flexbox/Grid Styling  |    H     |      3hr       |     hr      |
 | Working with API          |    H     |      3hr       |     hr      |
-| Responsive Design         |    H     |      3hr       |     hr      |
+| Responsive Design         |    M     |      3hr       |     hr      |
 | Contact/Email Event       |    M     |      1hr       |     hr      |
 | Resolving Errors          |    H     |      3hr       |     hr      |
 | Total                     |    H     |     25hrs      |     hrs     |
@@ -112,28 +112,24 @@ Time frames are also key in the development cycle. You have limited time to code
 
 | Component            | Priority | Estimated Time | Actual Time |
 | -------------------- | :------: | :------------: | :---------: |
-| Project Hover        |    L     |      2hr       |     -hr     |
+| Project Hover        |    M     |      2hr       |     hr      |
 | Menu Bar Expand      |    L     |      2hr       |     hr      |
-| Social Media Icons   |    L     |      1hr       |     hr      |
-| Make own icon        |    L     |      2hr       |     hr      |
-| Front Page Animation |    H     |      3hr       |     hr      |
-| 2nd HTML Page        |    M     |      3hr       |     hr      |
+| Social Media Icons   |    M     |      1hr       |     hr      |
+| Make own icon        |    M     |      2hr       |     hr      |
+| Front Page Animation |    M     |      3hr       |     hr      |
+| 2nd HTML Page        |    L     |      3hr       |     hr      |
 | Total                |    H     |     13hrs      |     hrs     |
 
 ## Additional Libraries
 
 Use this section to list all supporting libraries and thier role in the project.
 
-<!-- <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="responsivesheet" href="css/responsive.css" />
-    <script src="js/webcomponents.js" defer></script>
-    <script src="js/app.js" defer></script>
-    <script src="json/projects.json"></script> -->
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+Role: For simpler, cleaner code.
 
 ## Code Snippet
 
