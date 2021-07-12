@@ -100,8 +100,8 @@ Time frames are also key in the development cycle. You have limited time to code
 | CSS Default Styling (All) |    M     |      2hr       |     2hr     |
 | JS Forms/Event Listeners  |    H     |      2hr       |     hr      |
 | JS Functions & jQuery     |    H     |      3hr       |     hr      |
-| JSON Project Cards        |    H     |      3hr       |     hr      |
-| CSS Flexbox/Grid Styling  |    H     |      3hr       |     hr      |
+| JSON Project Cards        |    H     |      3hr       |   0.5 hr    |
+| CSS Flexbox/Grid Styling  |    H     |      3hr       |     4hr     |
 | Working with API          |    H     |      3hr       |     hr      |
 | Responsive Design         |    M     |      3hr       |     hr      |
 | Contact/Email Event       |    M     |      1hr       |    0.5hr    |

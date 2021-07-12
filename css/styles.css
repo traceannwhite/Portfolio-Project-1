@@ -34,6 +34,7 @@ header {
   background-color: #8aae92;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: white;
   font-family: "Zen Loop", cursive;
 }
@@ -103,7 +104,7 @@ section.design-strip {
   margin: 1em;
   padding: 0.5em;
   border-radius: 2px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   text-align: center;
   /* display: flex;
   flex-direction: column; */
@@ -112,6 +113,7 @@ section.design-strip {
 div img {
   width: 100%;
 }
+
 .project-title {
   background-color: rgb(138, 174, 146);
   font-size: 1.3em;
