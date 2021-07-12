@@ -1,22 +1,77 @@
 /* Import fonts here */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap");
+
 * {
   border: 1px solid red;
-}
-header {
-  background-color: gray;
-  display: flex;
-  justify-content: space-between;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-nav {
+h2,
+h3,
+h4 {
+  font-family: "Zen Loop", cursive;
+  font-style: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+p {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1em;
+}
+
+header {
+  background-color: #756b95;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: "Zen Loop", cursive;
+}
+
+#navigation {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-section.design {
+.nav-element {
+  text-decoration: none;
+  color: white;
+  display: none;
+}
+
+header .menu-icon {
+  width: 3em;
+  height: 3em;
+  background-image: url(https://img.icons8.com/cotton/64/000000/menu.png);
+}
+
+section.design-strip {
   background-color: blue;
-  width: cover;
+  background-image: url(https://res.cloudinary.com/dhcagrzcb/image/upload/v1626099863/landscape-background-4940099_1920_mti86t.jpg);
+  background-size: cover;
+  background-position: center;
   height: 15em;
   margin: 5em 0;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  margin: 4em;
+}
+
+.about-me p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  background-color: #756b95;
+  color: white;
+  height: 10%;
+  text-align: center;
 }
