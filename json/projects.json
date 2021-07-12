@@ -1,16 +1,16 @@
 [
   {
-    "image": "URL",
+    "image": "https://res.cloudinary.com/dhcagrzcb/image/upload/v1626119239/Mint_MagicShoppe-02_u8nbhw.jpg",
     "title": "Mint & Magic Shoppe Website",
     "description": "Front-end development build out using HTML, CSS, and JavaScript."
   },
   {
-    "image": "URL",
+    "image": "https://res.cloudinary.com/dhcagrzcb/image/upload/v1626119928/Screen_Shot_2021-07-12_at_2.57.25_PM_eqzfzv.png",
     "title": "LOTR jQuery Website",
     "description": "Made using jQuery."
   },
   {
-    "image": "URL",
+    "image": "https://res.cloudinary.com/dhcagrzcb/image/upload/v1626119928/Screen_Shot_2021-07-12_at_2.58.10_PM_ypbz22.png",
     "title": "Mars Responsive Design Website",
     "description": "Examples of responsive design using only CSS."
   }
