@@ -15,7 +15,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | Fri.   | Project Description                           | Complete   |
 | Fri.   | Wireframes                                    | Complete   |
 | Fri.   | Priority Matrix / Timeline                    | Complete   |
-| Mon.   | Core Application Structure (HTML)             | Incomplete |
+| Mon.   | Core Application Structure (HTML)             | Complete   |
 | Mon.   | Core Application Structure (CSS)              | Incomplete |
 | Tues.  | Core Application Structure (JS, JSON, jQuery) | Incomplete |
 | Weds.  | MVP & Bug Fixes                               | Incomplete |
@@ -97,14 +97,14 @@ Time frames are also key in the development cycle. You have limited time to code
 | ------------------------- | :------: | :------------: | :---------: |
 | Hamburger Menu            |    H     |      1hr       |     hr      |
 | Regular Nav               |    H     |      1hr       |     hr      |
-| CSS Default Styling (All) |    M     |      2hr       |     hr      |
+| CSS Default Styling (All) |    M     |      2hr       |     2hr     |
 | JS Forms/Event Listeners  |    H     |      2hr       |     hr      |
 | JS Functions & jQuery     |    H     |      3hr       |     hr      |
 | JSON Project Cards        |    H     |      3hr       |     hr      |
 | CSS Flexbox/Grid Styling  |    H     |      3hr       |     hr      |
 | Working with API          |    H     |      3hr       |     hr      |
 | Responsive Design         |    M     |      3hr       |     hr      |
-| Contact/Email Event       |    M     |      1hr       |     hr      |
+| Contact/Email Event       |    M     |      1hr       |    0.5hr    |
 | Resolving Errors          |    H     |      3hr       |     hr      |
 | Total                     |    H     |     25hrs      |     hrs     |
 
@@ -124,10 +124,9 @@ Time frames are also key in the development cycle. You have limited time to code
 
 Use this section to list all supporting libraries and thier role in the project.
 
-<script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
+"https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"
 
 Role: For simpler, cleaner code.
 
