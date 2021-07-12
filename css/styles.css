@@ -45,6 +45,7 @@ header .menu-icon {
   width: 3em;
   height: 3em;
   background-image: url(https://img.icons8.com/cotton/64/000000/menu.png);
+  background-size: contain;
 }
 
 section.design-strip {
@@ -53,17 +54,23 @@ section.design-strip {
   background-size: cover;
   background-position: center;
   height: 15em;
-  margin: 5em 0;
+  margin: 3em 0;
 }
 
 .about-me {
+  background: rgba(171, 68, 223, 0.229);
   display: flex;
   flex-direction: column;
   padding: 2em;
-  margin: 4em;
+  margin: 3em;
+  border-radius: 10px;
 }
 
+.about-me h2 {
+  background: rgb(255, 255, 255);
+}
 .about-me p {
+  background: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   text-align: center;
@@ -74,4 +81,47 @@ footer {
   color: white;
   height: 10%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  font-family: Montserrat;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.contact-form label {
+  border: 2px rgba(171, 68, 223, 0.229) solid;
+  border-radius: 3px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+/* label input,
+textarea {
+  display: flex;
+  justify-content: center;
+} */
+
+.contact-form textarea {
+  height: 6em;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.copyright img {
+  width: 20px;
+  height: 20px;
+}
+
+.copyright p {
+  font-size: 0.7em;
+  display: flex;
 }
