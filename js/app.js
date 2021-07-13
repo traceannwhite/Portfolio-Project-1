@@ -20,13 +20,16 @@ $menuButton.on("click", (event) => {
 // MAIN
 ////////////////////////
 
-//Project Cards
+//Project Cards JSON
 const $projects = $(".projects");
 $.ajax("./json/projects.json").then((data) => {
   data.forEach((project, index) => {
     const $div = $("<div>");
     $div.html(
-      `<h5 class ="project-title">${project.title}</h5><img src='${project.image}'/><p class="project-description">${project.description}</p>`
+      `<h5 class ="project-title">${project.title}</h5>
+      <img src='${project.image}'/>
+      <p class="project-description">${project.description}</p>
+      <a href="#" class="live-link">${project.livelink}</a>`
     );
     $projects.append($div);
   });
