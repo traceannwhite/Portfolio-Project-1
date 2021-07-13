@@ -4,9 +4,14 @@
 /* GENERAL CSS STYLING */
 
 * {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+h1 {
+  width: 50%;
 }
 
 h2,
@@ -28,34 +33,70 @@ p {
   font-size: 0.9em;
 }
 
+#div_id_1,
+#div_id_2,
+#div_id_3 {
+  margin: 0;
+  padding: 0;
+}
+
 /* HEADER */
 
 header {
-  background-color: #8aae92;
+  background-color: #97b0a3;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
   font-family: "Zen Loop", cursive;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #navigation {
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
-.nav-element {
-  text-decoration: none;
-  color: white;
+button {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+  background: transparent;
+}
+
+button .menu-button {
+  width: 3em;
+  height: 3em;
+}
+
+#nav-links {
   display: none;
 }
 
-header .menu-icon {
-  width: 3em;
-  height: 3em;
-  background-image: url(https://img.icons8.com/cotton/64/000000/menu.png);
-  background-size: contain;
+#nav-links ul {
+  list-style: none;
+  text-align: right;
+}
+
+li .nav-element {
+  text-decoration: none;
+  color: white;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 40px;
+  height: 7px;
+  border-radius: 6px;
+  background: white;
+  margin: 3px;
 }
 
 /* MAIN PAGE, IMAGE & LOGO */
@@ -65,7 +106,29 @@ section.design-strip {
   background-size: cover;
   background-position: center;
   height: 15em;
-  margin: 3em 0;
+  margin: 5em 0 0 0;
+}
+
+.diamond {
+  background-color: transparent;
+  width: 375px;
+  height: 375px;
+  border: 200px solid transparent;
+  border-bottom-color: black;
+  position: relative;
+  top: -200px;
+  margin: auto;
+}
+
+.diamond:after {
+  content: "";
+  position: absolute;
+  left: -200px;
+  top: 200px;
+  width: 375;
+  height: 375;
+  border: 200px solid transparent;
+  border-top-color: black;
 }
 
 /* MAIN PAGE, ABOUT ME */
@@ -121,8 +184,9 @@ div img {
   letter-spacing: 0.2ch;
 }
 
-.project-description {
-}
+/* .project-description {
+  background-color: red;
+} */
 
 /* MAIN PAGE, SKILLS */
 
