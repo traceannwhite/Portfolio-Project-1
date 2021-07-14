@@ -4,7 +4,7 @@
 /* GENERAL CSS STYLING */
 
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,6 +12,7 @@
 
 h1 {
   width: 50%;
+  padding: 10px;
 }
 
 h2,
@@ -43,15 +44,22 @@ p {
 /* HEADER */
 
 header {
-  background-color: #97b0a3;
+  /* background-color: #596961; */
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  color: white;
+  /* color: white; */
   font-family: "Zen Loop", cursive;
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+header img {
+  width: 6em;
+  height: 6em;
+  padding: 1px;
 }
 
 #navigation {
@@ -64,10 +72,16 @@ header {
 button {
   display: inline-block;
   border: none;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 5px;
   line-height: 2;
   background: transparent;
+  /* background-color: #b9d9f7; */
+}
+
+#navigation button {
+  position: fixed;
+  top: 0;
 }
 
 button .menu-button {
@@ -77,16 +91,30 @@ button .menu-button {
 
 #nav-links {
   display: none;
+  list-style: none;
+  text-align: right;
+  margin: 40px 0 0 0;
 }
 
 #nav-links ul {
   list-style: none;
-  text-align: right;
+  z-index: 2;
+}
+
+#nav-links a:hover {
+  background-color: #ddd;
+}
+
+#nav-links:hover ul {
+  display: block;
 }
 
 li .nav-element {
   text-decoration: none;
-  color: white;
+  color: black;
+  font-size: 1rem;
+  padding: 15px;
+  display: block;
 }
 
 .line1,
@@ -95,31 +123,24 @@ li .nav-element {
   width: 40px;
   height: 7px;
   border-radius: 6px;
-  background: white;
+  background: black;
   margin: 3px;
 }
 
+/* Adapted code from https://codepen.io/keefyboooo/pen/ENXrya for my menu navigation */
+
 /* MAIN PAGE, IMAGE & LOGO */
 
-section.design-strip {
-  background-image: url(https://res.cloudinary.com/dhcagrzcb/image/upload/v1626099863/landscape-background-4940099_1920_mti86t.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 15em;
-  margin: 5em 0 0 0;
-}
-
-/* code below I adapted from https://css-tricks.com/the-shapes-of-css/ to make a diamond shape */
-/* 
-.diamond {
-  background-color: transparent;
+/* .diamond {
+  background-color: red;
   width: 375px;
   height: 375px;
   border: 200px solid transparent;
   border-bottom-color: black;
   position: relative;
-  top: -200px;
+  top: -245px;
   margin: auto;
+  z-index: 3;
 }
 
 .diamond:after {
@@ -133,14 +154,53 @@ section.design-strip {
   border-top-color: black;
 } */
 
+section.design-strip {
+  background-image: url(https://res.cloudinary.com/dhcagrzcb/image/upload/v1626278311/fog-1535201_o8zbxs.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 15em;
+  margin: 5em 0 0 0;
+}
+
+.diamond div {
+  display: flex;
+  justify-content: center;
+}
+.diamond img {
+  z-index: 6;
+  width: 420px;
+  position: absolute;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.design-text {
+  color: white;
+  font-family: "Zen Loop", cursive;
+  font-size: 1.1em;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: -210px;
+}
+
+/* code below I adapted from https://css-tricks.com/the-shapes-of-css/ to make a diamond shape */
+
 /* MAIN PAGE, ABOUT ME */
 
 .about-me {
   display: flex;
   flex-direction: column;
-  padding: 3em;
+  padding: 0 3em;
   border-radius: 10px;
   min-width: 280px;
+  background-size: cover;
+  background-position: center;
+  height: 13em;
+  overflow: wrap;
 }
 
 .about-me h2 {
@@ -177,17 +237,33 @@ section.design-strip {
   position: relative;
 }
 
-.project-card img {
-  width: 100%;
-  background: #2e5d5a;
-}
-
-.project-title:hover {
+.project-card:hover .project-title,
+.project-card:hover .project-description {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
+.project-card img {
+  width: 100%;
+  height: 80%;
+}
+
+/* .project-card img::before {
+  width: 100%;
+  background-color: #2e5d5a;
+  background: linear-gradient(
+    top,
+    rgba(72, 76, 97, 0) 0%,
+    rgba(72, 76, 97, 0.8) 75%
+  );
+  content: "";
+  opacity: 0;
+  transition: all 0.35s;
+  transform: translate3d(-20, -20, -20);
+} */
+
 .project-title {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.818);
   font-size: 1.3em;
   padding: 0.3em;
   letter-spacing: 0.2ch;
@@ -200,16 +276,16 @@ section.design-strip {
   transition: all 0.35s;
   transform: translate3d(0, 0, 0);
 }
-
+/* 
 .project-description:hover {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-}
+} */
 
 .project-description {
   position: absolute;
-  background-color: white;
-  bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.414);
+  top: 60px;
   padding: 10px;
   width: 90%;
   text-align: center;
@@ -218,8 +294,13 @@ section.design-strip {
   transform: translate3d(0, 0, 0);
 }
 
-.live-link {
-  display: none;
+.projects-grid button {
+  background: transparent;
+}
+.projects-grid button svg {
+  width: 30px;
+  height: 30px;
+  color: #32495d;
 }
 /* MAIN PAGE, SKILLS */
 
@@ -228,14 +309,14 @@ section.design-strip {
 .contact-form {
   font-family: Montserrat;
   text-align: center;
-  background-color: #c4e3cb;
+  background-color: #c4d9ed;
   border-radius: 0.7em;
   width: 21em;
   margin: 1em auto;
 }
 
 #contact {
-  background-color: #8aae92;
+  background-color: #7f93a5a3;
 }
 .contact-form label {
   width: 80%;
@@ -256,9 +337,15 @@ section.design-strip {
   height: 6em;
 }
 
+.contact-form button {
+  background-color: white;
+  font-size: 1em;
+  border-radius: 50%;
+  padding: 0 10px;
+}
 /* FOOTER */
 footer {
-  background-color: #616161;
+  background-color: #7f93a5a3;
   color: white;
   height: 10%;
   text-align: center;
