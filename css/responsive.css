@@ -1,7 +1,32 @@
 /* TABLET */
 @media only screen and (min-width: 768px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+  }
 }
 
 /* LAPTOP */
 @media only screen and (min-width: 1024px) {
+  header {
+    max-width: 1800px;
+  }
+
+  body {
+    max-width: 1800px;
+    margin: auto;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .project-card {
+    max-width: 400px;
+  }
 }

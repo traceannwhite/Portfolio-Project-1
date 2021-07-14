@@ -109,6 +109,8 @@ section.design-strip {
   margin: 5em 0 0 0;
 }
 
+/* code below I adapted from https://css-tricks.com/the-shapes-of-css/ to make a diamond shape */
+/* 
 .diamond {
   background-color: transparent;
   width: 375px;
@@ -129,22 +131,23 @@ section.design-strip {
   height: 375;
   border: 200px solid transparent;
   border-top-color: black;
-}
+} */
 
 /* MAIN PAGE, ABOUT ME */
 
 .about-me {
   display: flex;
   flex-direction: column;
-  padding: 2em;
-  margin: 3em;
+  padding: 3em;
   border-radius: 10px;
+  min-width: 280px;
 }
 
 .about-me h2 {
   background: rgb(255, 255, 255);
   text-align: center;
 }
+
 .about-me p {
   background: rgb(255, 255, 255);
   text-align: center;
@@ -152,51 +155,78 @@ section.design-strip {
 
 /* MAIN PAGE, RECENT PROJECTS CARDS */
 
-.projects {
+.projects-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 3fr;
-  max-width: 21em;
+  width: 20em;
   margin: auto;
+  text-align: center;
 
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
 }
-.projects div {
-  margin: 1em;
-  padding: 0.5em;
-  border-radius: 2px;
-  /* border: 2px solid black; */
-  text-align: center;
-  /* display: flex;
-  flex-direction: column; */
-}
 
-div img {
+.project-card {
+  padding: 1em;
   width: 100%;
+  /* border: 2px solid black; */
+  /* text-align: center; */
+  /* display: grid; */
+  overflow: hidden;
+  position: relative;
 }
 
+.project-card img {
+  width: 100%;
+  background: #2e5d5a;
+}
+
+.project-title:hover {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
 .project-title {
-  background-color: rgb(138, 174, 146);
+  background-color: white;
   font-size: 1.3em;
   padding: 0.3em;
   letter-spacing: 0.2ch;
+  position: absolute;
+  bottom: 20;
+  padding: 10px;
+  width: 90%;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.35s;
+  transform: translate3d(0, 0, 0);
 }
 
-/* .project-description {
-  background-color: red;
-} */
+.project-description:hover {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
 
+.project-description {
+  position: absolute;
+  background-color: white;
+  bottom: 10px;
+  padding: 10px;
+  width: 90%;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.35s;
+  transform: translate3d(0, 0, 0);
+}
+
+.live-link {
+  display: none;
+}
 /* MAIN PAGE, SKILLS */
 
 /* MAIN PAGE, CONTACT ME */
 
 .contact-form {
   font-family: Montserrat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
   background-color: #c4e3cb;
   border-radius: 0.7em;
