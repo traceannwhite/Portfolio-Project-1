@@ -1,12 +1,5 @@
 [
   {
-    "title": "Mint & Magic Shoppe Website",
-    "image": "https://res.cloudinary.com/dhcagrzcb/image/upload/v1626119239/Mint_MagicShoppe-02_u8nbhw.jpg",
-    "description": "Front-end development build out using HTML, CSS, and JavaScript.",
-    "github": "URL",
-    "livelink": "URL"
-  },
-  {
     "title": "LOTR jQuery Website",
     "image": "https://res.cloudinary.com/dhcagrzcb/image/upload/v1626119928/Screen_Shot_2021-07-12_at_2.57.25_PM_eqzfzv.png",
     "description": "Made using jQuery.",
@@ -16,29 +9,36 @@
   {
     "title": "Mars Responsive Design Website",
     "image": "https://res.cloudinary.com/dhcagrzcb/image/upload/v1626119928/Screen_Shot_2021-07-12_at_2.58.10_PM_ypbz22.png",
-    "description": "Examples of responsive design using only CSS.",
-    "github": "URL",
+    "description": "Made using CSS Responsive Design.",
+    "github": "https://github.com/traceannwhite/MARS-Responsive-Website.git",
     "livelink": "https://mars-responsive-website-57gkexxbl-traceannwhite.vercel.app/"
   },
   {
-    "title": "Mars Responsive Design Website",
-    "image": "https://res.cloudinary.com/dhcagrzcb/image/upload/v1626119928/Screen_Shot_2021-07-12_at_2.58.10_PM_ypbz22.png",
-    "description": "Examples of responsive design using only CSS.",
+    "title": "Mint & Magic Shoppe Website",
+    "image": "https://res.cloudinary.com/dhcagrzcb/image/upload/v1626119239/Mint_MagicShoppe-02_u8nbhw.jpg",
+    "description": "Front-end development build out using HTML, CSS, and JavaScript.",
     "github": "URL",
-    "livelink": "https://mars-responsive-website-57gkexxbl-traceannwhite.vercel.app/"
+    "livelink": "URL"
   },
   {
-    "title": "Mars Responsive Design Website",
-    "image": "https://res.cloudinary.com/dhcagrzcb/image/upload/v1626119928/Screen_Shot_2021-07-12_at_2.58.10_PM_ypbz22.png",
-    "description": "Examples of responsive design using only CSS.",
-    "github": "URL",
-    "livelink": "https://mars-responsive-website-57gkexxbl-traceannwhite.vercel.app/"
+    "title": "Matchmaker Startup Website",
+    "image": "https://res.cloudinary.com/dhcagrzcb/image/upload/v1626363342/Screen_Shot_2021-07-15_at_10.18.15_AM_wtfjaz.png",
+    "description": "Made using HTML and CSS.",
+    "github": "https://github.com/traceannwhite/Matchmaker-Startup.git",
+    "livelink": "https://matchmaker-startup-g4wcn0gzl-traceannwhite.vercel.app/"
   },
   {
-    "title": "Mars Responsive Design Website",
-    "image": "https://res.cloudinary.com/dhcagrzcb/image/upload/v1626119928/Screen_Shot_2021-07-12_at_2.58.10_PM_ypbz22.png",
-    "description": "Examples of responsive design using only CSS.",
-    "github": "URL",
-    "livelink": "https://mars-responsive-website-57gkexxbl-traceannwhite.vercel.app/"
+    "title": "Top 5 Movies Website",
+    "image": "https://res.cloudinary.com/dhcagrzcb/image/upload/v1626363338/Screen_Shot_2021-07-15_at_10.29.00_AM_ypziif.png",
+    "description": "Made using JSON.",
+    "github": "https://github.com/traceannwhite/628-jsonlesson.git",
+    "livelink": "https://628-jsonlesson-natl4l6wg-traceannwhite.vercel.app/"
+  },
+  {
+    "title": "The Knot Website",
+    "image": "https://res.cloudinary.com/dhcagrzcb/image/upload/v1626364459/Screen_Shot_2021-07-15_at_10.54.03_AM_e3m5zo.png",
+    "description": "Made using CSS Flexbox.",
+    "github": "https://github.com/traceannwhite/Flexbox-Example.git",
+    "livelink": "https://the-knot-flexbox-example-qjypy17ip-traceannwhite.vercel.app/"
   }
 ]

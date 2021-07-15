@@ -40,20 +40,18 @@ p {
   margin: 0;
   padding: 0;
 }
-
 /* HEADER */
 
 header {
-  /* background-color: #596961; */
   display: flex;
   justify-content: space-between;
-  /* color: white; */
   font-family: "Zen Loop", cursive;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: white;
-  z-index: 1;
+  border-bottom: 2px solid black;
+  z-index: 7;
 }
 
 header img {
@@ -76,7 +74,6 @@ button {
   padding: 5px;
   line-height: 2;
   background: transparent;
-  /* background-color: #b9d9f7; */
 }
 
 #navigation button {
@@ -127,32 +124,14 @@ li .nav-element {
   margin: 3px;
 }
 
-/* Adapted code from https://codepen.io/keefyboooo/pen/ENXrya for my menu navigation */
+/* Adapted some code from https://codepen.io/keefyboooo/pen/ENXrya for my menu navigation button */
 
 /* MAIN PAGE, IMAGE & LOGO */
 
-/* .diamond {
-  background-color: red;
-  width: 375px;
-  height: 375px;
-  border: 200px solid transparent;
-  border-bottom-color: black;
-  position: relative;
-  top: -245px;
-  margin: auto;
-  z-index: 3;
+main {
+  /* margin: 4.7em auto 0; */
+  width: 100%;
 }
-
-.diamond:after {
-  content: "";
-  position: absolute;
-  left: -200px;
-  top: 200px;
-  width: 375;
-  height: 375;
-  border: 200px solid transparent;
-  border-top-color: black;
-} */
 
 section.design-strip {
   background-image: url(https://res.cloudinary.com/dhcagrzcb/image/upload/v1626278311/fog-1535201_o8zbxs.jpg);
@@ -186,8 +165,6 @@ section.design-strip {
   position: relative;
   top: -210px;
 }
-
-/* code below I adapted from https://css-tricks.com/the-shapes-of-css/ to make a diamond shape */
 
 /* MAIN PAGE, ABOUT ME */
 
@@ -248,20 +225,6 @@ section.design-strip {
   height: 80%;
 }
 
-/* .project-card img::before {
-  width: 100%;
-  background-color: #2e5d5a;
-  background: linear-gradient(
-    top,
-    rgba(72, 76, 97, 0) 0%,
-    rgba(72, 76, 97, 0.8) 75%
-  );
-  content: "";
-  opacity: 0;
-  transition: all 0.35s;
-  transform: translate3d(-20, -20, -20);
-} */
-
 .project-title {
   background-color: rgba(255, 255, 255, 0.818);
   font-size: 1.3em;
@@ -276,11 +239,6 @@ section.design-strip {
   transition: all 0.35s;
   transform: translate3d(0, 0, 0);
 }
-/* 
-.project-description:hover {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-} */
 
 .project-description {
   position: absolute;
@@ -302,7 +260,6 @@ section.design-strip {
   height: 30px;
   color: #32495d;
 }
-/* MAIN PAGE, SKILLS */
 
 /* MAIN PAGE, CONTACT ME */
 
@@ -353,15 +310,22 @@ footer {
   flex-direction: column;
 }
 
+.social-media {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.social-media a {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
 .copyright {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.copyright img {
-  width: 20px;
-  height: 20px;
 }
 
 .copyright p {
