@@ -133,19 +133,11 @@ Role: For simpler, cleaner code.
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
-
 None
 
 ## Issues and Resolutions
 
 Use this section to list of all major issues encountered and their resolution.
 
-#### SAMPLE.....
-
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier  
-**RESOLUTION**: Missing comma after first object in sources {} object
+**ERROR**: app.js29 SyntaxError mssing )
+**RESOLUTION**: Added the comma and the function worked.
