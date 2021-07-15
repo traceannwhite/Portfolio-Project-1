@@ -10,18 +10,18 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-| Day    | Deliverable                                   | Status     |
-| ------ | --------------------------------------------- | ---------- |
-| Fri.   | Project Description                           | Complete   |
-| Fri.   | Wireframes                                    | Complete   |
-| Fri.   | Priority Matrix / Timeline                    | Complete   |
-| Mon.   | Core Application Structure (HTML)             | Complete   |
-| Mon.   | Core Application Structure (CSS)              | Incomplete |
-| Tues.  | Core Application Structure (JS, JSON, jQuery) | Incomplete |
-| Weds.  | MVP & Bug Fixes                               | Incomplete |
-| Weds.  | Post-MVP Additions                            | Incomplete |
-| Weds.  | Final Touches                                 | Incomplete |
-| Thurs. | Present                                       | Incomplete |
+| Day    | Deliverable                                   | Status   |
+| ------ | --------------------------------------------- | -------- |
+| Fri.   | Project Description                           | Complete |
+| Fri.   | Wireframes                                    | Complete |
+| Fri.   | Priority Matrix / Timeline                    | Complete |
+| Mon.   | Core Application Structure (HTML)             | Complete |
+| Mon.   | Core Application Structure (CSS)              | Complete |
+| Tues.  | Core Application Structure (JS, JSON, jQuery) | Complete |
+| Weds.  | MVP & Bug Fixes                               | Complete |
+| Weds.  | Post-MVP Additions                            | Complete |
+| Weds.  | Final Touches                                 | Complete |
+| Thurs. | Present                                       | Complete |
 
 ## Project Description
 
@@ -95,30 +95,29 @@ Time frames are also key in the development cycle. You have limited time to code
 
 | Component                 | Priority | Estimated Time | Actual Time |
 | ------------------------- | :------: | :------------: | :---------: |
-| Hamburger Menu            |    H     |      1hr       |     hr      |
-| Regular Nav               |    H     |      1hr       |     hr      |
+| Hamburger Menu            |    H     |      1hr       |     2hr     |
+| Regular Nav               |    H     |      1hr       |     1hr     |
 | CSS Default Styling (All) |    M     |      2hr       |     2hr     |
-| JS Forms/Event Listeners  |    H     |      2hr       |     hr      |
-| JS Functions & jQuery     |    H     |      3hr       |     hr      |
+| JS Forms/Event Listeners  |    H     |      2hr       |     1hr     |
+| JS Functions & jQuery     |    H     |      3hr       |     1hr     |
 | JSON Project Cards        |    H     |      3hr       |   0.5 hr    |
 | CSS Flexbox/Grid Styling  |    H     |      3hr       |     4hr     |
-| Working with API          |    H     |      3hr       |     hr      |
-| Responsive Design         |    M     |      3hr       |     hr      |
+| Responsive Design         |    M     |      3hr       |     3hr     |
 | Contact/Email Event       |    M     |      1hr       |    0.5hr    |
-| Resolving Errors          |    H     |      3hr       |     hr      |
-| Total                     |    H     |     25hrs      |     hrs     |
+| Resolving Errors          |    H     |      3hr       |     4hr     |
+| Total                     |    H     |     22hrs      |    19hrs    |
 
 #### PostMVP
 
 | Component            | Priority | Estimated Time | Actual Time |
 | -------------------- | :------: | :------------: | :---------: |
-| Project Hover        |    M     |      2hr       |     hr      |
-| Menu Bar Expand      |    L     |      2hr       |     hr      |
-| Social Media Icons   |    M     |      1hr       |     hr      |
-| Make own icon        |    M     |      2hr       |     hr      |
-| Front Page Animation |    M     |      3hr       |     hr      |
-| 2nd HTML Page        |    L     |      3hr       |     hr      |
-| Total                |    H     |     13hrs      |     hrs     |
+| Project Hover        |    M     |      2hr       |     2hr     |
+| Menu Bar Expand      |    L     |      2hr       |     2hr     |
+| Social Media Icons   |    M     |      1hr       |    0.5hr    |
+| Make own icon        |    M     |      2hr       |     1hr     |
+| Front Page Animation |    M     |      3hr       |      I      |
+| 2nd HTML Page        |    L     |      3hr       |      I      |
+| Total                |    H     |     13hrs      |   5.5hrs    |
 
 ## Additional Libraries
 
@@ -139,6 +138,8 @@ function reverse(string) {
 	// here is the code to reverse a string of text
 }
 ```
+
+None
 
 ## Issues and Resolutions
 
