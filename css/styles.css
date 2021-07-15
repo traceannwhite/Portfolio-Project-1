@@ -165,12 +165,13 @@ section.design-strip {
 .about-me h2 {
   background: rgb(255, 255, 255);
   text-align: center;
+  padding: 5px;
 }
 
 .about-me p {
   background: rgb(255, 255, 255);
   text-align: center;
-  padding: 0 0 1em 0;
+  padding: 10px 0 10px 0;
 }
 
 /* MAIN PAGE, RECENT PROJECTS CARDS */
