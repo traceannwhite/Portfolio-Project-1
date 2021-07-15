@@ -4,7 +4,7 @@
 /* GENERAL CSS STYLING */
 
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,6 +12,7 @@
 
 h1 {
   width: 50%;
+  padding: 10px;
 }
 
 h2,
@@ -39,19 +40,24 @@ p {
   margin: 0;
   padding: 0;
 }
-
 /* HEADER */
 
 header {
-  background-color: #97b0a3;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  color: white;
   font-family: "Zen Loop", cursive;
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: white;
+  border-bottom: 2px solid black;
+  z-index: 7;
+}
+
+header img {
+  width: 6em;
+  height: 6em;
+  padding: 1px;
 }
 
 #navigation {
@@ -64,10 +70,15 @@ header {
 button {
   display: inline-block;
   border: none;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 5px;
   line-height: 2;
   background: transparent;
+}
+
+#navigation button {
+  position: fixed;
+  top: 0;
 }
 
 button .menu-button {
@@ -77,16 +88,30 @@ button .menu-button {
 
 #nav-links {
   display: none;
+  list-style: none;
+  text-align: right;
+  margin: 40px 0 0 0;
 }
 
 #nav-links ul {
   list-style: none;
-  text-align: right;
+  z-index: 2;
+}
+
+#nav-links a:hover {
+  background-color: #ddd;
+}
+
+#nav-links:hover ul {
+  display: block;
 }
 
 li .nav-element {
   text-decoration: none;
-  color: white;
+  color: black;
+  font-size: 1rem;
+  padding: 15px;
+  display: block;
 }
 
 .line1,
@@ -95,40 +120,31 @@ li .nav-element {
   width: 40px;
   height: 7px;
   border-radius: 6px;
-  background: white;
+  background: black;
   margin: 3px;
 }
 
+/* Adapted some code from https://codepen.io/keefyboooo/pen/ENXrya for my menu navigation button */
+
 /* MAIN PAGE, IMAGE & LOGO */
 
+body {
+  margin-top: 200px;
+  position: relative;
+  width: 100%;
+}
+
 section.design-strip {
-  background-image: url(https://res.cloudinary.com/dhcagrzcb/image/upload/v1626099863/landscape-background-4940099_1920_mti86t.jpg);
+  background-image: url(https://res.cloudinary.com/dhcagrzcb/image/upload/v1626278310/trees-975091_rkzhte.jpg);
   background-size: cover;
   background-position: center;
   height: 15em;
   margin: 5em 0 0 0;
 }
 
-.diamond {
-  background-color: transparent;
-  width: 375px;
-  height: 375px;
-  border: 200px solid transparent;
-  border-bottom-color: black;
-  position: relative;
-  top: -200px;
-  margin: auto;
-}
-
-.diamond:after {
-  content: "";
-  position: absolute;
-  left: -200px;
-  top: 200px;
-  width: 375;
-  height: 375;
-  border: 200px solid transparent;
-  border-top-color: black;
+.diamond div {
+  display: flex;
+  justify-content: center;
 }
 
 /* MAIN PAGE, ABOUT ME */
@@ -136,76 +152,111 @@ section.design-strip {
 .about-me {
   display: flex;
   flex-direction: column;
-  padding: 2em;
-  margin: 3em;
+  justify-content: space-around;
+  padding: 0 4em;
   border-radius: 10px;
+  min-width: 280px;
+  background-size: cover;
+  background-position: center;
+  height: 13em;
+  overflow: wrap;
 }
 
 .about-me h2 {
   background: rgb(255, 255, 255);
   text-align: center;
 }
+
 .about-me p {
   background: rgb(255, 255, 255);
   text-align: center;
+  padding: 0 0 1em 0;
 }
 
 /* MAIN PAGE, RECENT PROJECTS CARDS */
 
-.projects {
+.projects-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 3fr;
-  max-width: 21em;
+  width: 20em;
   margin: auto;
+  text-align: center;
 
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
 }
-.projects div {
-  margin: 1em;
-  padding: 0.5em;
-  border-radius: 2px;
+
+.project-card {
+  padding: 1em;
+  width: 100%;
   /* border: 2px solid black; */
-  text-align: center;
-  /* display: flex;
-  flex-direction: column; */
+  /* text-align: center; */
+  /* display: grid; */
+  overflow: hidden;
+  position: relative;
 }
 
-div img {
+.project-card:hover .project-title,
+.project-card:hover .project-description {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.project-card img {
   width: 100%;
+  height: 80%;
 }
 
 .project-title {
-  background-color: rgb(138, 174, 146);
+  background-color: rgba(255, 255, 255, 0.818);
   font-size: 1.3em;
   padding: 0.3em;
   letter-spacing: 0.2ch;
+  position: absolute;
+  bottom: 20;
+  padding: 10px;
+  width: 90%;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.35s;
+  transform: translate3d(0, 0, 0);
 }
 
-/* .project-description {
-  background-color: red;
-} */
+.project-description {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.414);
+  top: 60px;
+  padding: 10px;
+  width: 90%;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.35s;
+  transform: translate3d(0, 0, 0);
+}
 
-/* MAIN PAGE, SKILLS */
+.projects-grid button {
+  background: transparent;
+}
+.projects-grid button svg {
+  width: 30px;
+  height: 30px;
+  color: #32495d;
+}
 
 /* MAIN PAGE, CONTACT ME */
 
 .contact-form {
   font-family: Montserrat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
-  background-color: #c4e3cb;
+  background-color: #7ba98892;
   border-radius: 0.7em;
   width: 21em;
   margin: 1em auto;
 }
 
 #contact {
-  background-color: #8aae92;
+  background-color: #4d6956;
 }
 .contact-form label {
   width: 80%;
@@ -226,9 +277,15 @@ div img {
   height: 6em;
 }
 
+.contact-form button {
+  background-color: white;
+  font-size: 1em;
+  border-radius: 50%;
+  padding: 0 10px;
+}
 /* FOOTER */
 footer {
-  background-color: #616161;
+  background-color: #4d6956;
   color: white;
   height: 10%;
   text-align: center;
@@ -236,15 +293,22 @@ footer {
   flex-direction: column;
 }
 
+.social-media {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.social-media a {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
 .copyright {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.copyright img {
-  width: 20px;
-  height: 20px;
 }
 
 .copyright p {
