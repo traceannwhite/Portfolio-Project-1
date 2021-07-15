@@ -16,17 +16,17 @@ $menuButton.on("click", (event) => {
   }
 });
 
-// Function for smooth scrolling - NOT WORKING -
+// Function for smooth scrolling
 
-// $(document).ready(function() {
-//   $('.nav-element').click(function() {
-//     const linkHref = $(this).attr('href');
-//     $('html, body').animate({
-//       scrollTop: $(linkHref).offset().top
-//     });
-//     e.preventDefault();
-//   });
-// }
+$(document).ready(function () {
+  $(".nav-element").click(function () {
+    const linkHref = $(this).attr("href");
+    $("html, body").animate({
+      scrollTop: $(linkHref).offset().top - 250,
+    });
+    e.preventDefault();
+  });
+});
 
 ////////////////////////
 // MAIN

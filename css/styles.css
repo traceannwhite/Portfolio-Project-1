@@ -128,13 +128,14 @@ li .nav-element {
 
 /* MAIN PAGE, IMAGE & LOGO */
 
-main {
-  /* margin: 4.7em auto 0; */
+body {
+  margin-top: 200px;
+  position: relative;
   width: 100%;
 }
 
 section.design-strip {
-  background-image: url(https://res.cloudinary.com/dhcagrzcb/image/upload/v1626278311/fog-1535201_o8zbxs.jpg);
+  background-image: url(https://res.cloudinary.com/dhcagrzcb/image/upload/v1626278310/trees-975091_rkzhte.jpg);
   background-size: cover;
   background-position: center;
   height: 15em;
@@ -145,33 +146,14 @@ section.design-strip {
   display: flex;
   justify-content: center;
 }
-.diamond img {
-  z-index: 6;
-  width: 420px;
-  position: absolute;
-  top: 50px;
-  display: flex;
-  justify-content: center;
-}
-.design-text {
-  color: white;
-  font-family: "Zen Loop", cursive;
-  font-size: 1.1em;
-  z-index: 6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  top: -210px;
-}
 
 /* MAIN PAGE, ABOUT ME */
 
 .about-me {
   display: flex;
   flex-direction: column;
-  padding: 0 3em;
+  justify-content: space-around;
+  padding: 0 4em;
   border-radius: 10px;
   min-width: 280px;
   background-size: cover;
@@ -188,6 +170,7 @@ section.design-strip {
 .about-me p {
   background: rgb(255, 255, 255);
   text-align: center;
+  padding: 0 0 1em 0;
 }
 
 /* MAIN PAGE, RECENT PROJECTS CARDS */
@@ -266,14 +249,14 @@ section.design-strip {
 .contact-form {
   font-family: Montserrat;
   text-align: center;
-  background-color: #c4d9ed;
+  background-color: #7ba98892;
   border-radius: 0.7em;
   width: 21em;
   margin: 1em auto;
 }
 
 #contact {
-  background-color: #7f93a5a3;
+  background-color: #4d6956;
 }
 .contact-form label {
   width: 80%;
@@ -302,7 +285,7 @@ section.design-strip {
 }
 /* FOOTER */
 footer {
-  background-color: #7f93a5a3;
+  background-color: #4d6956;
   color: white;
   height: 10%;
   text-align: center;
